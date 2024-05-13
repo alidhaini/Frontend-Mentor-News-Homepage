@@ -1,0 +1,40 @@
+footer{
+    display: flex;
+    margin: 3rem 5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer__item{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    align-items: start;
+    flex: 1;
+    width: 5rem;
+    min-width: 20rem;
+    /* background-color: red; */
+}
+
+.footer__item-content{
+
+}
+
+.footer__item-content_count{
+    color: var(--clr-grayishBlue);
+    font-size: var(--size-2xl);
+    letter-spacing: 0.1rem;
+    margin-bottom: .7rem;
+    font-weight: 700;
+}
+.footer__item-content_title{
+    color: var(--clr-veryDarkGrayishBlue);
+    font-weight: 800;
+    margin-bottom: .7rem;
+    transition: color 0.3s;
+}
+
+.footer__item-content_title:hover{
+    color: var(--clr-red);
+    cursor: pointer;
+}

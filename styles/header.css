@@ -1,0 +1,28 @@
+header{
+    background-color: white;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 5rem 2rem 5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.navbar__list{
+    list-style-type: none;
+}
+
+.navbar__a{
+    text-decoration: none;
+    color: var(--clr-darkGrayishBlue);
+    transition: color 0.3s;
+}
+
+.navbar__a:hover{
+    color: var(--clr-red);
+}
