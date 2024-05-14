@@ -1,8 +1,9 @@
 footer{
     display: flex;
-    margin: 3rem 5rem;
+    margin: 5rem 10rem;
     flex-wrap: wrap;
     gap: 2rem;
+
 }
 
 .footer__item{
@@ -12,8 +13,7 @@ footer{
     align-items: start;
     flex: 1;
     width: 5rem;
-    min-width: 20rem;
-    /* background-color: red; */
+    min-width: 18rem;
 }
 
 .footer__item-content{
@@ -22,7 +22,7 @@ footer{
 
 .footer__item-content_count{
     color: var(--clr-grayishBlue);
-    font-size: var(--size-2xl);
+    font-size: var(--size-3xl);
     letter-spacing: 0.1rem;
     margin-bottom: .7rem;
     font-weight: 700;
@@ -32,9 +32,38 @@ footer{
     font-weight: 800;
     margin-bottom: .7rem;
     transition: color 0.3s;
-}
+    font-size: var(--size-base);
 
+}
 .footer__item-content_title:hover{
     color: var(--clr-red);
     cursor: pointer;
+}
+.footer__item-content_description{
+    color: var(--clr-darkGrayishBlue);
+    font-size: var(--size-sm);
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    footer{
+        margin: 2rem 6rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:640px) {
+    footer{
+        padding: 0 2rem;
+        margin: 2rem 0rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:375px) {
+    footer{
+        margin: 4rem 0rem;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
 }

@@ -1,12 +1,14 @@
 header{
     background-color: white;
-    height: 8rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 5rem 2rem 5rem;
+    padding: 3rem 10rem 2rem 10rem;
 }
-
+.icon-menu{
+    display: none;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -21,8 +23,31 @@ header{
     text-decoration: none;
     color: var(--clr-darkGrayishBlue);
     transition: color 0.3s;
+    font-size: var(--size-base);
 }
 
 .navbar__a:hover{
     color: var(--clr-red);
+}
+
+@media (max-width:1024px) {
+    header{
+        padding: 2rem 6rem;
+        height: 8rem;
+    }
+}
+
+@media (max-width:768px) {
+    .desktop-nav{
+        display: none;
+    }
+    .icon-menu{
+        display: inline-block;
+    }
+}
+
+@media (max-width:640px) {
+    header{
+        padding: 2rem;
+    }
 }
